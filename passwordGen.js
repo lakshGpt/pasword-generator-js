@@ -51,10 +51,10 @@ const generatePassword = (password = "") => {
   if (password.length < totalChar.value) {
     return generatePassword(password); // recursive calling
   }
-  
+
   // no need for truncate() becoz we always need to find the substring
   password = password.substring(0, totalChar.value);    
-  console.log(password, password.length);
+//   console.log(password, password.length);
   passBox.textContent = password;
 };
 
